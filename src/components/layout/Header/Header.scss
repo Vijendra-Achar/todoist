@@ -1,0 +1,18 @@
+@import './../../../scss/variables';
+@import './../../../scss/common';
+
+.header {
+  height: 8vh;
+  background-color: $todoist-white;
+  nav {
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__logo {
+    height: 6vh;
+    width: auto;
+  }
+}

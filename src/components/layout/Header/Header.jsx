@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { FaSun, FaPlus, FaSignInAlt } from 'react-icons/fa';
+import { VscAdd, VscSymbolColor, VscSignIn } from 'react-icons/vsc';
 
 import './Header.scss';
 // import './../../../scss/_common.scss';
@@ -18,14 +18,15 @@ export const Header = () => {
         <div className="header__settings">
           <ul>
             <li>
-              <FaPlus className="header__icon" />
+              <VscAdd className="header__icon" />
             </li>
             <li>
-              <FaSun className="header__icon" />
+              <VscSymbolColor className="header__icon" />
             </li>
 
             <li>
-              <FaSignInAlt className="header__icon" />
+              <VscSignIn className="header__icon" />
+              <p> Sign In </p>
             </li>
           </ul>
         </div>

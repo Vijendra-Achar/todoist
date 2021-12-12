@@ -4,8 +4,8 @@ import { Sidebar } from '../Sidebar/Sidebar';
 
 export const Content = () => {
   return (
-    <section>
+    <div>
       <Sidebar />
-    </section>
+    </div>
   );
 };

@@ -24,10 +24,21 @@
 
       li {
         margin: 0 15px;
-        padding: 5px 10px;
+        padding: 8px 10px;
         border-radius: 5px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        transition: all 0.3s ease-out;
+
+        p {
+          margin: 0 0 0 10px;
+        }
+
         &:hover {
-          background-color: #ececec;
+          background-color: $todoist-grey;
           cursor: pointer;
         }
       }

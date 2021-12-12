@@ -1,38 +1,43 @@
 import React from 'react';
 
-import { FaInbox, FaCalendarDay, FaCalendarAlt, FaChevronDown } from 'react-icons/fa';
+import { VscInbox, VscCalendar, VscBrowser, VscChevronDown } from 'react-icons/vsc';
+
+import './Sidebar.scss';
 
 export const Sidebar = () => {
   return (
     <div className="sidebar" data-testid="sidebar">
-      <ul className="sidebar__primary">
-        <li>
-          <span>
-            <FaInbox />
-          </span>
-          <span>Inbox</span>
-        </li>
-        <li>
-          <span>
-            <FaCalendarDay />
-          </span>
-          <span>Today</span>
-        </li>
-        <li>
-          <span>
-            <FaCalendarAlt />
-          </span>
-          <span>Upcoming</span>
-        </li>
-      </ul>
+      <div className="sidebar__container">
+        <div className="sidebar__primary">
+          <div className="sidebar__category">
+            <span>
+              <VscInbox className="sidebar__icon inbox" />
+            </span>
+            <span className="sidebar__label">Inbox</span>
+          </div>
 
-      <div className="sidebar__projects">
-        <span>
-          <FaChevronDown />
-          <h2>Projects</h2>
-        </span>
-        <ul className="sidebar__projects-list">Projects list here!!!</ul>
-        Add project component here!!!
+          <div className="sidebar__category">
+            <span>
+              <VscBrowser className="sidebar__icon" />
+            </span>
+            <span className="sidebar__label">Today</span>
+          </div>
+
+          <div className="sidebar__category">
+            <span>
+              <VscCalendar className="sidebar__icon" />
+            </span>
+            <span className="sidebar__label">Upcoming</span>
+          </div>
+        </div>
+
+        <div className="sidebar__projects">
+          <div className="sidebar__projects-title">
+            <VscChevronDown />
+            <h2>Projects</h2>
+          </div>
+          <ul className="sidebar__projects-list">Projects list here!!!</ul>
+        </div>
       </div>
     </div>
   );

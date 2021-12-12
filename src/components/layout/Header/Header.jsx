@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { FaSun, FaPlusCircle } from 'react-icons/fa';
+import { FaSun, FaPlus, FaSignInAlt } from 'react-icons/fa';
 
 import './Header.scss';
 // import './../../../scss/_common.scss';
@@ -18,10 +18,14 @@ export const Header = () => {
         <div className="header__settings">
           <ul>
             <li>
-              <FaPlusCircle />
+              <FaPlus className="header__icon" />
             </li>
             <li>
-              <FaSun />
+              <FaSun className="header__icon" />
+            </li>
+
+            <li>
+              <FaSignInAlt className="header__icon" />
             </li>
           </ul>
         </div>

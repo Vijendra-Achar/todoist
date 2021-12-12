@@ -8,11 +8,34 @@
     height: inherit;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
   }
 
   &__logo {
-    height: 6vh;
+    height: 5vh;
     width: auto;
+  }
+
+  &__settings {
+    ul {
+      list-style: none;
+      display: flex;
+
+      li {
+        margin: 0 15px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        &:hover {
+          background-color: #ececec;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  &__icon {
+    font-size: 1.25em;
+    color: lighten($black-color, 10%);
   }
 }

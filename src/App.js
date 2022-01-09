@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 
 import { Content } from './components/layout/Content/Content';
 import { Header } from './components/layout/Header/Header';
-import { Login } from './components/layout/Login/Login';
+import { Login } from './components/layout/Users/Login/Login';
 
 import './App.scss';
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Login.scss';
 
-import TodoistFullLogo from './../../../assets/todoist_logo_full.svg';
+import TodoistFullLogo from '../../../../assets/todoist_logo_full.svg';
 
 import { FaGoogle, FaFacebookSquare } from 'react-icons/fa';
 

@@ -1,5 +1,13 @@
-function App() {
-  return <div className="App">Todoist App</div>;
-}
+import React from "react";
+
+import Header from "./components/modules/Header/Header.jsx";
+
+const App = () => {
+  return (
+    <div className="App">
+      <Header />
+    </div>
+  );
+};
 
 export default App;

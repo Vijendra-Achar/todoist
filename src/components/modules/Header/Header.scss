@@ -1,0 +1,30 @@
+@import "./../../../scss/common";
+@import "./../../../scss/variables";
+
+.header {
+  height: 4rem;
+  background-color: $grey-color;
+  box-shadow: $box-shadow-bottom-black;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  &__left-side {
+    display: flex;
+    align-items: center;
+    height: inherit;
+  }
+
+  &__logo {
+    img {
+      height: 36px;
+    }
+  }
+}

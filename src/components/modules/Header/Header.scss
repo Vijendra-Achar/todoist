@@ -33,8 +33,19 @@
     }
   }
 
-  &__add-task {
-    font-size: 1.5rem;
+  &__icon {
+    font-size: 2rem;
+    height: 1em;
+
+    border-radius: $border-radius;
+    transition: all $transition-time;
+    cursor: pointer;
+    color: $red-color;
+
+    &:hover {
+      color: $white-color;
+      background: $red-color;
+    }
   }
 
   &__authentication {

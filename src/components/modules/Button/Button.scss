@@ -1,0 +1,40 @@
+@import "./../../../scss/variables";
+
+.button {
+  padding: 0.5rem 1rem;
+
+  text-align: center;
+  align-items: center;
+  border-radius: $border-radius;
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  transition: all $transition-time;
+
+  &-outline {
+    color: $red-color;
+    border: 1px solid $red-color;
+
+    &:hover {
+      background-color: $red-color;
+      color: $white-color;
+    }
+  }
+
+  &-icon {
+    height: fit-content;
+  }
+
+  &-filled {
+    background-color: $red-color;
+    border: 1px solid $red-color;
+    color: $white-color;
+
+    &:hover {
+      color: $red-color;
+      background-color: transparent;
+    }
+  }
+}

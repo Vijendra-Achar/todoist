@@ -2,9 +2,11 @@ import React, { useState } from "react";
 
 import TodoistLogo from "../../../assets/icons/todoist_logo.svg";
 
-import { FaPlus } from "react-icons/fa";
+import { BsPlus } from "react-icons/bs";
 
 import "./Header.scss";
+
+import Button from "../Button/Button";
 
 const Header = () => {
   const [userIsLoggedIn, setUserIsLoggedIn] = useState(false);
@@ -20,8 +22,8 @@ const Header = () => {
         </div>
 
         <div className="header__right-side">
-          <div className="header__add-task">
-            <FaPlus />
+          <div className="header__icon">
+            <BsPlus />
           </div>
           <div className="header__help"></div>
           <div className="header__authentication">
@@ -29,8 +31,12 @@ const Header = () => {
 
             {!userIsLoggedIn && (
               <div className="header__authentication__buttons">
-                <div className="header__authentication__button button button-outline">Login</div>
-                <div className="header__authentication__button button button-outline">Sign up</div>
+                <div className="header__authentication__button">
+                  <Button label="Login" type="button" style="outline" />
+                </div>
+                <div className="header__authentication__button">
+                  <Button label="Sign up" type="button" style="outline" />
+                </div>
               </div>
             )}
           </div>

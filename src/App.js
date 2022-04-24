@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 import Header from "./components/modules/Header/Header.jsx";
 import Login from "./components/pages/Login/Login.jsx";
@@ -14,7 +14,8 @@ const App = () => {
 
       <div className="App__pages">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Navigate replace to="/home" />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/login" element={<Login />} />
         </Routes>
       </div>

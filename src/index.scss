@@ -18,3 +18,9 @@ body {
   background-color: $black-color;
   color: $white-color;
 }
+
+.App {
+  &__container {
+    display: flex;
+  }
+}

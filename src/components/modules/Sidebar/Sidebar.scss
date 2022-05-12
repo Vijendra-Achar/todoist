@@ -1,5 +1,16 @@
+@import "./../../../scss/variables";
+
 .sidebar {
   width: 20vw;
-  height: calc(100vh - 4rem);
-  background: blue;
+  height: calc(100vh - 5rem);
+
+  margin: 0.5rem;
+  padding: 1rem;
+
+  background: $grey-color;
+  border-radius: $border-radius;
+
+  &__section {
+    padding: 1rem;
+  }
 }

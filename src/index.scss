@@ -23,4 +23,15 @@ body {
   &__container {
     display: flex;
   }
+
+  &__pages {
+    width: 80vw;
+    height: calc(100vh - 5rem);
+
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    padding: 1rem;
+
+    background: $grey-color;
+    border-radius: $border-radius;
+  }
 }

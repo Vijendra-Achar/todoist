@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import TodoistLogo from "../../../assets/icons/todoist_logo.svg";
 
@@ -10,6 +11,15 @@ import Button from "../Button/Button";
 
 const Header = () => {
   const [userIsLoggedIn, setUserIsLoggedIn] = useState(false);
+  const routerNavigate = useNavigate();
+
+  const handleLoginClickEvent = (event) => {
+    routerNavigate("/login");
+  };
+
+  const handleSignupClickEvent = (event) => {
+    routerNavigate("/signup");
+  };
 
   return (
     <div className="header">
@@ -32,10 +42,10 @@ const Header = () => {
             {!userIsLoggedIn && (
               <div className="header__authentication__buttons">
                 <div className="header__authentication__button">
-                  <Button label="Login" type="button" style="outline" />
+                  <Button buttonClickHandler={handleLoginClickEvent} label="Login" type="button" style="outline" />
                 </div>
                 <div className="header__authentication__button">
-                  <Button label="Sign up" type="button" style="outline" />
+                  <Button buttonClickHandler={handleSignupClickEvent} label="Sign up" type="button" style="outline" />
                 </div>
               </div>
             )}

@@ -1,8 +1,9 @@
 import React from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 
 import Header from "./components/modules/Header/Header.jsx";
 import Login from "./components/pages/Login/Login.jsx";
+import Signup from "./components/pages/Signup/Signup.jsx";
 import Home from "./components/pages/Home/Home.jsx";
 import Sidebar from "./components/modules/Sidebar/Sidebar.jsx";
 
@@ -21,6 +22,7 @@ const App = () => {
             <Route path="/" element={<Navigate replace to="/home" />} />
             <Route path="/home" element={<Home />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
           </Routes>
         </div>
       </div>

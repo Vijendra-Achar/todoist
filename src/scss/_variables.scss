@@ -8,3 +8,10 @@ $box-shadow-bottom-black: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0
 
 $border-radius: 0.25rem;
 $transition-time: 0.3s;
+
+// Media query break points
+$mobile-break-point: 599px;
+$tablet-break-point: 600px;
+$tablet-landscape-break-point: 600px;
+$desktop-break-point: 1200px;
+$high-res-desktop-break-point: 1800px;

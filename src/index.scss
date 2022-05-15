@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap");
 
 @import "./scss/variables";
+@import "./scss/mixins";
 
 // CSS Normalize
 * {
@@ -33,5 +34,17 @@ body {
 
     background: $grey-color;
     border-radius: $border-radius;
+  }
+
+  @include for-phone-only {
+    &__container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__pages {
+      width: 96vw;
+      margin: 0 0.5rem 0.5rem 0.5rem;
+    }
   }
 }

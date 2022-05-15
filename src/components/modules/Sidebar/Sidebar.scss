@@ -1,4 +1,5 @@
 @import "./../../../scss/variables";
+@import "./../../../scss/mixins";
 
 .sidebar {
   width: 20vw;
@@ -31,5 +32,10 @@
         background-color: $black-color;
       }
     }
+  }
+
+  @include for-phone-only {
+    width: 96vw;
+    height: fit-content;
   }
 }

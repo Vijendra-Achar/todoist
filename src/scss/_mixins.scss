@@ -1,0 +1,27 @@
+@import "./variables";
+
+@mixin for-phone-only {
+  @media (max-width: $mobile-break-point) {
+    @content;
+  }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: $tablet-break-point) {
+    @content;
+  }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: $tablet-landscape-break-point) {
+    @content;
+  }
+}
+@mixin for-desktop-up {
+  @media (min-width: $desktop-break-point) {
+    @content;
+  }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: $high-res-desktop-break-point) {
+    @content;
+  }
+}

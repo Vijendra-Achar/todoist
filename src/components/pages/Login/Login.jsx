@@ -2,6 +2,8 @@ import React from "react";
 
 import InputTextBox from "../../modules/InputTextBox/InputTextBox";
 
+import "./Login.scss";
+
 const Login = () => {
   return (
     <div className="login">

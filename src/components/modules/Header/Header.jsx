@@ -21,12 +21,16 @@ const Header = () => {
     routerNavigate("/signup");
   };
 
+  const handleLogoClickEvent = (event) => {
+    routerNavigate("/todos");
+  };
+
   return (
     <div className="header">
       <div className="header__container">
         <div className="header__left-side">
           <div className="header__logo">
-            <img src={TodoistLogo} alt="todoist_logo" />
+            <img onClick={handleLogoClickEvent} src={TodoistLogo} alt="todoist_logo" />
           </div>
           <div className="header__search-bar"></div>
         </div>

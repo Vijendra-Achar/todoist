@@ -1,0 +1,17 @@
+@import "../../../scss/variables";
+
+.main {
+  &__container {
+    display: flex;
+  }
+
+  &__outlet {
+    width: 80vw;
+
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    padding: 1rem;
+
+    background: $grey-color;
+    border-radius: $border-radius;
+  }
+}

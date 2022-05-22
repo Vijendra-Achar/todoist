@@ -6,7 +6,7 @@
   }
 
   &__outlet {
-    width: 80vw;
+    width: calc(80vw - 1.5rem);
 
     margin: 0.5rem 0.5rem 0.5rem 0;
     padding: 1rem;

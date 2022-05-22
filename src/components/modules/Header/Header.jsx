@@ -46,10 +46,20 @@ const Header = () => {
             {!userIsLoggedIn && (
               <div className="header__authentication__buttons">
                 <div className="header__authentication__button">
-                  <Button buttonClickHandler={handleLoginClickEvent} label="Login" type="button" style="outline" />
+                  <Button
+                    buttonClickHandler={handleLoginClickEvent}
+                    label="Login"
+                    type="button"
+                    buttonStyle="outline"
+                  />
                 </div>
                 <div className="header__authentication__button">
-                  <Button buttonClickHandler={handleSignupClickEvent} label="Sign up" type="button" style="outline" />
+                  <Button
+                    buttonClickHandler={handleSignupClickEvent}
+                    label="Sign up"
+                    type="button"
+                    buttonStyle="outline"
+                  />
                 </div>
               </div>
             )}

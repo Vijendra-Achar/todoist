@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, Navigate, useLocation } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 import Header from "./components/modules/Header/Header.jsx";
 import Login from "./components/pages/Login/Login.jsx";
@@ -14,7 +14,7 @@ const App = () => {
 
       <div className="App__container">
         <Routes>
-          <Route path="/" element={<Navigate replace to="/home" />} />
+          <Route path="/" element={<Navigate replace to="/todos" />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/todos" element={<TodosMain />}>

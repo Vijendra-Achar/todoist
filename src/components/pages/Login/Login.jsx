@@ -8,7 +8,7 @@ const Login = () => {
   return (
     <div className="login">
       <div className="login__title">
-        <InputTextBox type="text" />
+        <InputTextBox type="text" label="Name and Age" />
       </div>
     </div>
   );

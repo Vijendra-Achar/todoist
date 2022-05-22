@@ -1,5 +1,37 @@
+@import "./../../../scss/variables";
+
 .input-box {
-  &__text {
+  position: relative;
+  border-top: 20px solid transparent;
+  margin-bottom: 5px;
+
+  font-size: 1rem;
+
+  &__text,
+  input {
     font-size: 1rem;
+
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    border-radius: $border-radius;
+    outline: none;
+    padding: 0.5rem;
+    min-width: 12vw;
+
+    &:focus + .input-box__placeholder {
+      top: 5%;
+      color: #f2f2f2;
+    }
+  }
+
+  &__placeholder {
+    position: absolute;
+    left: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
